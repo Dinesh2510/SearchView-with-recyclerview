@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_item_my_apps"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/my_apps_card_margin_horizontal"
+    android:layout_marginTop="@dimen/main_card_margin_vertical"
+    android:layout_marginEnd="@dimen/my_apps_card_margin_horizontal"
+    android:layout_marginBottom="@dimen/main_card_margin_vertical"
+    android:background="#ffffffff"
+    android:foreground="?selectableItemBackground"
+    app:cardCornerRadius="@dimen/card_recycler_corner_radius"
+    app:cardElevation="@dimen/card_recycler_elevation">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="@dimen/text_margin">
+
+        <ImageView
+            android:id="@+id/image_app"
+            android:layout_width="56.0dip"
+            android:layout_height="56.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/text_margin" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/image_app"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#ff000000" />
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview"
+            android:layout_marginTop="@dimen/text_margin_very_small"
+            android:layout_toEndOf="@+id/image_app" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

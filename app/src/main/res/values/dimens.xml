@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="card_recycler_corner_radius">4.0dip</dimen>
+    <dimen name="card_recycler_elevation">2.0dip</dimen>
+    <dimen name="cardview_compat_inset_shadow">1.0dip</dimen>
+    <dimen name="cardview_default_elevation">2.0dip</dimen>
+    <dimen name="cardview_default_radius">2.0dip</dimen>
+
+    <dimen name="main_card_margin_vertical">8.0dip</dimen>
+    <dimen name="my_apps_card_margin_horizontal">16.0dip</dimen>
+
+    <dimen name="spacing_large">15.0dip</dimen>
+    <dimen name="spacing_mlarge">20.0dip</dimen>
+    <dimen name="text_margin">16.0dip</dimen>
+    <dimen name="text_margin_very_small">4.0dip</dimen>
+
+</resources>
