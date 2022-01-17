@@ -4,6 +4,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.recyclerview.widget.RecyclerView.Adapter;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 import java.util.ArrayList;
@@ -36,10 +38,16 @@ public class ExampleAdapter extends Adapter<ExampleAdapter.ExampleViewHolder> {
     }
 
     public void onBindViewHolder(ExampleViewHolder holder, int position) {
-        ExampleItem currentItem = (ExampleItem) this.exampleList.get(position);
+        final ExampleItem currentItem = (ExampleItem) this.exampleList.get(position);
         holder.imageView.setImageResource(currentItem.getImageResource());
         holder.textView1.setText(currentItem.getText1());
         holder.textView2.setText(currentItem.getText2());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(v.getContext(), ""+currentItem.getText1(), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     public int getItemCount() {
