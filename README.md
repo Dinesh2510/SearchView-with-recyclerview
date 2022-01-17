@@ -1,6 +1,9 @@
 # SearchView-with-recyclerview
 
 
+#### ➡️ Offline recyclerview Search using Edittext 
+#### ➡️ Dynamic recyclerview Search using Edittext (Shown Lisitng using API)
+
 ![Screenshot_20191123-095834](https://user-images.githubusercontent.com/46309253/69473336-6f9f5a00-0dd9-11ea-883d-3c656f2796ef.png)
 
 ![Screenshot_20191123-095846](https://user-images.githubusercontent.com/46309253/69473337-6f9f5a00-0dd9-11ea-8239-9027b1bc7465.png)
